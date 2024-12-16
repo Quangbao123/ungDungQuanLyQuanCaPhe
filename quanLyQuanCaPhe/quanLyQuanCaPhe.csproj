@@ -62,6 +62,12 @@
     <Compile Include="FirstForm.Designer.cs">
       <DependentUpon>FirstForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="ForgotPasswordForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ForgotPasswordForm.Designer.cs">
+      <DependentUpon>ForgotPasswordForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="LoginFormNhanVien.cs">
@@ -70,8 +76,17 @@
     <Compile Include="LoginFormNhanVien.Designer.cs">
       <DependentUpon>LoginFormNhanVien.cs</DependentUpon>
     </Compile>
+    <Compile Include="ForgotPassword2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ForgotPassword2.Designer.cs">
+      <DependentUpon>ForgotPassword2.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="FirstForm.resx">
       <DependentUpon>FirstForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ForgotPasswordForm.resx">
+      <DependentUpon>ForgotPasswordForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -85,6 +100,9 @@
     </Compile>
     <EmbeddedResource Include="LoginFormNhanVien.resx">
       <DependentUpon>LoginFormNhanVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ForgotPassword2.resx">
+      <DependentUpon>ForgotPassword2.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

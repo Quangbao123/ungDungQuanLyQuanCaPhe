@@ -44,6 +44,19 @@ namespace quanLyQuanCaPhe
             nv.FormClosing += (s, args) =>
             {
                 // hien thi lai firstform sau khi dong
+                this.ShowDialog();
+            };
+            nv.ShowDialog();
+        }
+
+        private void simpleButton3_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            LoginFormNhanVien nv = new LoginFormNhanVien();
+
+            nv.FormClosing += (s, args) =>
+            {
+                // hien thi lai firstform sau khi dong
                 this.Show();
             };
             nv.ShowDialog();

@@ -43,5 +43,17 @@ namespace quanLyQuanCaPhe
             // dong login form
             this.Close();
         }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            this.Hide();
+            // mo form dat lai mat khau
+            ForgotPasswordForm FPform = new ForgotPasswordForm();
+            FPform.FormClosing += (s, args) =>
+            {
+                this.Show();
+            };
+            FPform.ShowDialog();
+        }
     }
 }

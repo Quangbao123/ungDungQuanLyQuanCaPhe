@@ -65,6 +65,7 @@
             this.simpleButton3.Size = new System.Drawing.Size(196, 70);
             this.simpleButton3.TabIndex = 4;
             this.simpleButton3.Text = "Admin";
+            this.simpleButton3.Click += new System.EventHandler(this.simpleButton3_Click);
             // 
             // FirstForm
             // 
