@@ -1,6 +1,6 @@
 ﻿namespace quanLyQuanCaPhe
 {
-    partial class LoginFormNhanVien
+    partial class LoginFormBarista
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LoginFormNhanVien));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LoginFormBarista));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label3 = new System.Windows.Forms.Label();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
@@ -55,12 +55,11 @@
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.ForeColor = System.Drawing.Color.White;
-            this.groupBox1.Location = new System.Drawing.Point(282, 128);
+            this.groupBox1.Location = new System.Drawing.Point(297, 141);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(451, 394);
-            this.groupBox1.TabIndex = 0;
+            this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // label3
             // 
@@ -115,7 +114,6 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(258, 27);
             this.textBox1.TabIndex = 2;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // label2
             // 
@@ -141,11 +139,11 @@
             this.checkButton1.Location = new System.Drawing.Point(25, 613);
             this.checkButton1.Name = "checkButton1";
             this.checkButton1.Size = new System.Drawing.Size(56, 52);
-            this.checkButton1.TabIndex = 1;
+            this.checkButton1.TabIndex = 2;
             this.checkButton1.Text = "checkButton1";
             this.checkButton1.CheckedChanged += new System.EventHandler(this.checkButton1_CheckedChanged);
             // 
-            // LoginFormNhanVien
+            // LoginFormBarista
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -154,12 +152,10 @@
             this.ClientSize = new System.Drawing.Size(1044, 677);
             this.Controls.Add(this.checkButton1);
             this.Controls.Add(this.groupBox1);
-            this.IconOptions.Image = ((System.Drawing.Image)(resources.GetObject("LoginFormNhanVien.IconOptions.Image")));
-            this.MaximizeBox = false;
-            this.Name = "LoginFormNhanVien";
+            this.IconOptions.Image = ((System.Drawing.Image)(resources.GetObject("LoginFormBarista.IconOptions.Image")));
+            this.Name = "LoginFormBarista";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Đăng nhập";
-            this.Load += new System.EventHandler(this.LoginFormNhanVien_Load);
+            this.Text = "LoginFormBarista";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
@@ -169,13 +165,13 @@
         #endregion
 
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.LinkLabel linkLabel1;
+        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.LinkLabel linkLabel1;
+        private System.Windows.Forms.Label label1;
         private DevExpress.XtraEditors.CheckButton checkButton1;
-        private System.Windows.Forms.Label label3;
     }
 }

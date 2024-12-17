@@ -32,34 +32,71 @@ namespace quanLyQuanCaPhe
 
         private void simpleButton1_Click(object sender, EventArgs e)
         {
+            this.Hide();
+            
+            frmQR nv = new frmQR();
 
+            nv.FormClosing += (s, args) =>
+            {
+                
+                this.ShowDialog();
+            };
+            nv.ShowDialog();
         }
 
         private void simpleButton2_Click(object sender, EventArgs e)
         {
             this.Hide();
             // mo form dang nhap
-            LoginFormNhanVien nv = new LoginFormNhanVien();
+            LoginFormWaiter wt = new LoginFormWaiter();
 
-            nv.FormClosing += (s, args) =>
+            wt.FormClosing += (s, args) =>
             {
                 // hien thi lai firstform sau khi dong
-                this.ShowDialog();
+                this.Show();
             };
-            nv.ShowDialog();
+            wt.ShowDialog();
         }
 
         private void simpleButton3_Click(object sender, EventArgs e)
         {
             this.Hide();
-            LoginFormNhanVien nv = new LoginFormNhanVien();
+            LoginFormAdmin ad = new LoginFormAdmin();
+            ad.FormClosing += (s, args) => this.Show();
+            ad.ShowDialog();
+        }
 
-            nv.FormClosing += (s, args) =>
+        private void simpleButton4_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            // mo form dang nhap
+            LoginFormBarista br = new LoginFormBarista();
+
+            br.FormClosing += (s, args) =>
             {
                 // hien thi lai firstform sau khi dong
                 this.Show();
             };
-            nv.ShowDialog();
+            br.ShowDialog();
+        }
+
+        private void simpleButton5_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            // mo form dang nhap
+            LoginFormCashier cs= new LoginFormCashier();
+
+            cs.FormClosing += (s, args) =>
+            {
+                // hien thi lai firstform sau khi dong
+                this.Show();
+            };
+            cs.ShowDialog();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+            
         }
     }
 }

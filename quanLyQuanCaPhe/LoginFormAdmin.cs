@@ -11,36 +11,15 @@ using System.Windows.Forms;
 
 namespace quanLyQuanCaPhe
 {
-    public partial class LoginFormNhanVien : DevExpress.XtraEditors.XtraForm
+    public partial class LoginFormAdmin : DevExpress.XtraEditors.XtraForm
     {
-        public LoginFormNhanVien()
+        public LoginFormAdmin()
         {
             InitializeComponent();
         }
 
-        private void LoginFormNhanVien_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void groupBox1_Enter(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void checkButton1_CheckedChanged(object sender, EventArgs e)
         {
-            // dong login form
             this.Close();
         }
 
@@ -48,12 +27,20 @@ namespace quanLyQuanCaPhe
         {
             this.Hide();
             // mo form dat lai mat khau
-            ForgotPasswordForm FPform = new ForgotPasswordForm();
+            EmailForm FPform = new EmailForm();
             FPform.FormClosing += (s, args) =>
             {
                 this.Show();
             };
             FPform.ShowDialog();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FunctionFormAdmin formAdmin = new FunctionFormAdmin();
+            formAdmin.FormClosing += (s, args) => this.Show();
+            formAdmin.ShowDialog();
         }
     }
 }

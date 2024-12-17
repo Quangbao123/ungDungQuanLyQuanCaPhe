@@ -11,9 +11,9 @@ using System.Windows.Forms;
 
 namespace quanLyQuanCaPhe
 {
-    public partial class ForgotPasswordForm : DevExpress.XtraEditors.XtraForm
+    public partial class EmailForm : DevExpress.XtraEditors.XtraForm
     {
-        public ForgotPasswordForm()
+        public EmailForm()
         {
             InitializeComponent();
         }

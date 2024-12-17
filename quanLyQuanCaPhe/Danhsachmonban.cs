@@ -1,4 +1,5 @@
-﻿using DevExpress.XtraEditors;
+﻿using DevExpress.Xpo.Logger;
+using DevExpress.XtraEditors;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -11,16 +12,18 @@ using System.Windows.Forms;
 
 namespace quanLyQuanCaPhe
 {
-    public partial class FORGOTPASSWORDFORM2 : DevExpress.XtraEditors.XtraForm
+    public partial class Danhsachmonban : DevExpress.XtraEditors.XtraForm
     {
-        public FORGOTPASSWORDFORM2()
+        public Danhsachmonban()
         {
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void Danhsachmonban_Load(object sender, EventArgs e)
         {
-            this.Close();
+            label1.Text = "Không có món nào được đặt";
+            label1.Font = new Font("Arial", 12, FontStyle.Bold);
+            label1.Visible = true;
         }
 
         private void checkButton1_CheckedChanged(object sender, EventArgs e)

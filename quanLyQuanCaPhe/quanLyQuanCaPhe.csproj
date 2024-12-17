@@ -43,6 +43,9 @@
     <Reference Include="DevExpress.XtraGrid.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.XtraLayout.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.XtraPrinting.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraScheduler.v24.1, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraScheduler.v24.1.Core, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraScheduler.v24.1.Core.Desktop, Version=24.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -56,25 +59,103 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Danhsachmonban.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Danhsachmonban.Designer.cs">
+      <DependentUpon>Danhsachmonban.cs</DependentUpon>
+    </Compile>
     <Compile Include="FirstForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FirstForm.Designer.cs">
       <DependentUpon>FirstForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="ForgotPasswordForm.cs">
+    <Compile Include="EmailForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ForgotPasswordForm.Designer.cs">
-      <DependentUpon>ForgotPasswordForm.cs</DependentUpon>
+    <Compile Include="EmailForm.Designer.cs">
+      <DependentUpon>EmailForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDS.Designer.cs">
+      <DependentUpon>frmDS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDSB.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDSB.Designer.cs">
+      <DependentUpon>frmDSB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMenu.Designer.cs">
+      <DependentUpon>frmMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmOptions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOptions.Designer.cs">
+      <DependentUpon>frmOptions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmQR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmQR.Designer.cs">
+      <DependentUpon>frmQR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FunctionFormAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FunctionFormAdmin.Designer.cs">
+      <DependentUpon>FunctionFormAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FunctionFormBarista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FunctionFormBarista.Designer.cs">
+      <DependentUpon>FunctionFormBarista.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FunctionFormCashier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FunctionFormCashier.Designer.cs">
+      <DependentUpon>FunctionFormCashier.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FunctionFormWaiter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FunctionFormWaiter.Designer.cs">
+      <DependentUpon>FunctionFormWaiter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginFormAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginFormAdmin.Designer.cs">
+      <DependentUpon>LoginFormAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginFormBarista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginFormBarista.Designer.cs">
+      <DependentUpon>LoginFormBarista.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginFormCashier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginFormCashier.Designer.cs">
+      <DependentUpon>LoginFormCashier.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="LoginFormNhanVien.cs">
+    <Compile Include="LoginFormWaiter.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="LoginFormNhanVien.Designer.cs">
-      <DependentUpon>LoginFormNhanVien.cs</DependentUpon>
+    <Compile Include="LoginFormWaiter.Designer.cs">
+      <DependentUpon>LoginFormWaiter.cs</DependentUpon>
     </Compile>
     <Compile Include="ForgotPassword2.cs">
       <SubType>Form</SubType>
@@ -82,11 +163,56 @@
     <Compile Include="ForgotPassword2.Designer.cs">
       <DependentUpon>ForgotPassword2.cs</DependentUpon>
     </Compile>
+    <Compile Include="TinhTrangOrderForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TinhTrangOrderForm.Designer.cs">
+      <DependentUpon>TinhTrangOrderForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Danhsachmonban.resx">
+      <DependentUpon>Danhsachmonban.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FirstForm.resx">
       <DependentUpon>FirstForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ForgotPasswordForm.resx">
-      <DependentUpon>ForgotPasswordForm.cs</DependentUpon>
+    <EmbeddedResource Include="EmailForm.resx">
+      <DependentUpon>EmailForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDS.resx">
+      <DependentUpon>frmDS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDSB.resx">
+      <DependentUpon>frmDSB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMenu.resx">
+      <DependentUpon>frmMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOptions.resx">
+      <DependentUpon>frmOptions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmQR.resx">
+      <DependentUpon>frmQR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FunctionFormAdmin.resx">
+      <DependentUpon>FunctionFormAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FunctionFormBarista.resx">
+      <DependentUpon>FunctionFormBarista.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FunctionFormCashier.resx">
+      <DependentUpon>FunctionFormCashier.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FunctionFormWaiter.resx">
+      <DependentUpon>FunctionFormWaiter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginFormAdmin.resx">
+      <DependentUpon>LoginFormAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginFormBarista.resx">
+      <DependentUpon>LoginFormBarista.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginFormCashier.resx">
+      <DependentUpon>LoginFormCashier.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -98,11 +224,14 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="LoginFormNhanVien.resx">
-      <DependentUpon>LoginFormNhanVien.cs</DependentUpon>
+    <EmbeddedResource Include="LoginFormWaiter.resx">
+      <DependentUpon>LoginFormWaiter.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ForgotPassword2.resx">
       <DependentUpon>ForgotPassword2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TinhTrangOrderForm.resx">
+      <DependentUpon>TinhTrangOrderForm.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

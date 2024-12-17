@@ -11,21 +11,25 @@ using System.Windows.Forms;
 
 namespace quanLyQuanCaPhe
 {
-    public partial class FORGOTPASSWORDFORM2 : DevExpress.XtraEditors.XtraForm
+    public partial class frmDS : DevExpress.XtraEditors.XtraForm
     {
-        public FORGOTPASSWORDFORM2()
+        public frmDS()
         {
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void button5_Click(object sender, EventArgs e)
         {
-            this.Close();
-        }
+            this.Hide();
 
-        private void checkButton1_CheckedChanged(object sender, EventArgs e)
-        {
-            this.Close();
+            frmOptions nv = new frmOptions();
+
+            nv.FormClosing += (s, args) =>
+            {
+
+                this.ShowDialog();
+            };
+            nv.ShowDialog();
         }
     }
 }
