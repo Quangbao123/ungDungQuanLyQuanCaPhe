@@ -1,6 +1,6 @@
 ﻿namespace quanLyQuanCaPhe
 {
-    partial class Danhsachmonban
+    partial class FunctionStatusOrderWaiter
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Danhsachmonban));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FunctionStatusOrderWaiter));
             this.label1 = new System.Windows.Forms.Label();
             this.checkButton1 = new DevExpress.XtraEditors.CheckButton();
             this.SuspendLayout();
@@ -41,6 +41,7 @@
             this.label1.Size = new System.Drawing.Size(51, 19);
             this.label1.TabIndex = 0;
             this.label1.Text = "label1";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // checkButton1
             // 
@@ -61,6 +62,7 @@
             this.Controls.Add(this.label1);
             this.IconOptions.Image = ((System.Drawing.Image)(resources.GetObject("Danhsachmonban.IconOptions.Image")));
             this.Name = "Danhsachmonban";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Danhsachmonban";
             this.Load += new System.EventHandler(this.Danhsachmonban_Load);
             this.ResumeLayout(false);

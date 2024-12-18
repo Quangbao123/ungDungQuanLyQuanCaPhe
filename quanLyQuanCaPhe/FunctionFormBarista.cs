@@ -16,5 +16,21 @@ namespace quanLyQuanCaPhe
         {
             InitializeComponent();
         }
+
+        private void accordionControlElement2_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FunctionViewOrderBarista viewOrderBarista = new FunctionViewOrderBarista();
+            viewOrderBarista.FormClosing += (s, args) => this.Show();
+            viewOrderBarista.ShowDialog();
+        }
+
+        private void accordionControlElement3_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FunctionTBaoBarista tBaoBarista = new FunctionTBaoBarista();
+            tBaoBarista.FormClosing += (s, args) => this.Show();
+            tBaoBarista.ShowDialog();
+        }
     }
 }

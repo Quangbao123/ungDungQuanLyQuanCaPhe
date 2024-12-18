@@ -19,7 +19,10 @@ namespace quanLyQuanCaPhe
 
         private void accordionControlElement2_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            FunctionTBPVWaiter tbpv = new FunctionTBPVWaiter();
+            tbpv.FormClosing += (s, args) => this.Show();
+            _ = tbpv.ShowDialog();
         }
 
         private void accordionControlElement1_Click(object sender, EventArgs e)

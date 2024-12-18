@@ -59,11 +59,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Danhsachmonban.cs">
+    <Compile Include="CashierIssueInvoice.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Danhsachmonban.Designer.cs">
-      <DependentUpon>Danhsachmonban.cs</DependentUpon>
+    <Compile Include="CashierIssueInvoice.Designer.cs">
+      <DependentUpon>CashierIssueInvoice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CashierViewOrderList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CashierViewOrderList.Designer.cs">
+      <DependentUpon>CashierViewOrderList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FunctionStatusOrderWaiter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FunctionStatusOrderWaiter.Designer.cs">
+      <DependentUpon>FunctionStatusOrderWaiter.cs</DependentUpon>
     </Compile>
     <Compile Include="FirstForm.cs">
       <SubType>Form</SubType>
@@ -131,6 +143,18 @@
     <Compile Include="FunctionFormWaiter.Designer.cs">
       <DependentUpon>FunctionFormWaiter.cs</DependentUpon>
     </Compile>
+    <Compile Include="FunctionTBaoBarista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FunctionTBaoBarista.Designer.cs">
+      <DependentUpon>FunctionTBaoBarista.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FunctionTBPVWaiter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FunctionTBPVWaiter.Designer.cs">
+      <DependentUpon>FunctionTBPVWaiter.cs</DependentUpon>
+    </Compile>
     <Compile Include="LoginFormAdmin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -169,8 +193,20 @@
     <Compile Include="TinhTrangOrderForm.Designer.cs">
       <DependentUpon>TinhTrangOrderForm.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Danhsachmonban.resx">
-      <DependentUpon>Danhsachmonban.cs</DependentUpon>
+    <Compile Include="FunctionViewOrderBarista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FunctionViewOrderBarista.Designer.cs">
+      <DependentUpon>FunctionViewOrderBarista.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="CashierIssueInvoice.resx">
+      <DependentUpon>CashierIssueInvoice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CashierViewOrderList.resx">
+      <DependentUpon>CashierViewOrderList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FunctionStatusOrderWaiter.resx">
+      <DependentUpon>FunctionStatusOrderWaiter.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FirstForm.resx">
       <DependentUpon>FirstForm.cs</DependentUpon>
@@ -205,6 +241,12 @@
     <EmbeddedResource Include="FunctionFormWaiter.resx">
       <DependentUpon>FunctionFormWaiter.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FunctionTBaoBarista.resx">
+      <DependentUpon>FunctionTBaoBarista.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FunctionTBPVWaiter.resx">
+      <DependentUpon>FunctionTBPVWaiter.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="LoginFormAdmin.resx">
       <DependentUpon>LoginFormAdmin.cs</DependentUpon>
     </EmbeddedResource>
@@ -232,6 +274,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="TinhTrangOrderForm.resx">
       <DependentUpon>TinhTrangOrderForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FunctionViewOrderBarista.resx">
+      <DependentUpon>FunctionViewOrderBarista.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

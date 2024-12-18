@@ -31,7 +31,6 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmOptions));
             this.fluentDesignFormContainer1 = new DevExpress.XtraBars.FluentDesignSystem.FluentDesignFormContainer();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.accordionControl1 = new DevExpress.XtraBars.Navigation.AccordionControl();
             this.accordionControlElement1 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.accordionControlElement4 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
@@ -44,11 +43,12 @@
             this.accordionControlElement3 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.fluentFormDefaultManager1 = new DevExpress.XtraBars.FluentDesignSystem.FluentFormDefaultManager(this.components);
             this.fluentDesignFormControl1 = new DevExpress.XtraBars.FluentDesignSystem.FluentDesignFormControl();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.fluentDesignFormContainer1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.accordionControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fluentFormDefaultManager1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fluentDesignFormControl1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // fluentDesignFormContainer1
@@ -61,17 +61,6 @@
             this.fluentDesignFormContainer1.Size = new System.Drawing.Size(1270, 814);
             this.fluentDesignFormContainer1.TabIndex = 0;
             this.fluentDesignFormContainer1.Click += new System.EventHandler(this.fluentDesignFormContainer1_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.No;
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(32, 34);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(2350, 723);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
             // 
             // accordionControl1
             // 
@@ -172,6 +161,17 @@
             this.fluentDesignFormControl1.TabIndex = 2;
             this.fluentDesignFormControl1.TabStop = false;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.No;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(32, 34);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(2350, 723);
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
             // frmOptions
             // 
             this.AccessibleName = "";
@@ -189,10 +189,10 @@
             this.NavigationControl = this.accordionControl1;
             this.Text = "Rex Coffee";
             this.fluentDesignFormContainer1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.accordionControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.fluentFormDefaultManager1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.fluentDesignFormControl1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -210,7 +210,7 @@
         private DevExpress.XtraBars.Navigation.AccordionControlSeparator accordionControlSeparator2;
         private DevExpress.XtraBars.Navigation.AccordionControlSeparator accordionControlSeparator3;
         private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement6;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement3;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

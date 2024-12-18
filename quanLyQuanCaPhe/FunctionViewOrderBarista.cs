@@ -1,5 +1,4 @@
-﻿using DevExpress.Xpo.Logger;
-using DevExpress.XtraEditors;
+﻿using DevExpress.XtraEditors;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -12,16 +11,21 @@ using System.Windows.Forms;
 
 namespace quanLyQuanCaPhe
 {
-    public partial class Danhsachmonban : DevExpress.XtraEditors.XtraForm
+    public partial class FunctionViewOrderBarista : DevExpress.XtraEditors.XtraForm
     {
-        public Danhsachmonban()
+        public FunctionViewOrderBarista()
         {
             InitializeComponent();
         }
 
-        private void Danhsachmonban_Load(object sender, EventArgs e)
+        private void label1_Click(object sender, EventArgs e)
         {
-            label1.Text = "Không có món nào được đặt";
+
+        }
+
+        private void FunctionViewOrderBarista_Load(object sender, EventArgs e)
+        {
+            label1.Text = "Hiện tại không có món nào được đặt.";
             label1.Font = new Font("Arial", 12, FontStyle.Bold);
             label1.Visible = true;
         }

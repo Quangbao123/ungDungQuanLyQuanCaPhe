@@ -16,7 +16,7 @@ namespace quanLyQuanCaPhe
         private void active()
         {
             this.Hide();
-            Danhsachmonban ds = new Danhsachmonban();
+            FunctionStatusOrderWaiter ds = new FunctionStatusOrderWaiter();
             ds.FormClosing += (s, args) => this.Show();
             ds.ShowDialog();
         }

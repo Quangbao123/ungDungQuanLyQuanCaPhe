@@ -16,5 +16,21 @@ namespace quanLyQuanCaPhe
         {
             InitializeComponent();
         }
+
+        private void accordionControlElement2_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            CashierViewOrderList cashierViewOrderList = new CashierViewOrderList();
+            cashierViewOrderList.FormClosing += (s, args) => this.Show();
+            cashierViewOrderList.ShowDialog();
+        }
+
+        private void accordionControlElement3_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            CashierIssueInvoice cashierIssueInvoice = new CashierIssueInvoice();
+            cashierIssueInvoice.FormClosing += (s, args) => this.Show();
+            cashierIssueInvoice.ShowDialog();
+        }
     }
 }
